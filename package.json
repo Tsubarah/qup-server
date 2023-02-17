@@ -1,0 +1,31 @@
+{
+  "name": "q-up-server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "cross-env DEBUG=q-up:* nodemon server.js",
+    "debug": "cross-env DEBUG=q-up:*,socket.io:client,socket.io:server nodemon --inspect server.js",
+    "host": "nodemon server.js --host"
+  },
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.2.0",
+    "axios": "^1.2.1",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
+    "duration-fns": "^3.0.1",
+    "express": "~4.16.1",
+    "lyrics-finder": "^21.7.0",
+    "morgan": "~1.9.1",
+    "nanoid": "^3.1.20",
+    "socket.io": "^4.4.1",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
