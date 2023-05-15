@@ -68,6 +68,7 @@ const handleUserConnect = function (id) {
       id,
       token: session.accessToken,
     })
+    io.to(session).emit("playlist", session.playlist)
   }
 }
 
